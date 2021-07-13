@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lemonada:wght@600&display=swap');
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: tan;
+  margin:150px auto;
+  font-family: 'Lemonada', cursive;
+}
+
+.quote-box {
+   background-color: tomato;
+   width:500px;
+   padding:30px;
+  box-shadow: -2px -2px 4px #777,
+              4px 4px 6px rgba(0,0,0,0.4);
+}
+
+i {
+  opacity:0.4;
+  font-size:80px;
+}
+
+#author {
+  font-size:25px;
+  float:right;
+  color:green;
+  font-family: 'Caveat', cursive;
+}
+
+button {
+  background-color: #666;
+  color:#fff;
+  padding:5px;
+  margin-top:50px;
+  font-family: linda, cursive;
+}
+
+button:focus {
+  transform:scale(0.98);
+}
+button:active {
+  outline:none;
+}

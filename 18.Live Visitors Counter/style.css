@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 85, 74);
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    margin: 0;
+}

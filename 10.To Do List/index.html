@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container d-flex flex-column vh-100 text-center p-2">
+        <h1 id="title" class="title m-4"><em>ToDo List - <strong>queryravindra</strong></em></h1>
+        <div class="box col-sm-12 col-md-10 col-lg-8 mx-auto my-3">
+            <div class="main my-2">
+                <form id="form" class="my-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control text-capitalize" id="item" placeholder="Enter a ToDo...">
+                        <div class="input-group-append">
+                          <button class="btn btn-secondary" id="addToDo" type="submit">Add ToDo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h4 id="heading" class="my-4 display"><u>My ToDo's</u></h4>
+            <section id="rect">
+                <table class="table">
+                    <tbody class="my-todos">
+                        <!-- <tr class="todo table-danger col-12">
+                            <td class="text-left col-8"><h6 class="todoName"><i style="cursor:pointer;color:green;" class="fa fa-check-circle mr-2 check"></i>blablablah</h6></td>
+                            <td class="text-right"><i style="cursor:pointer; color:peru;" class="fa fa-edit edit"></i></td>
+                            <td class="text-right"><i style="cursor:pointer;color:red;" class="fa fa-trash delete"></i></td>
+                        </tr>  -->
+                    </tbody>
+                </table>
+                <div class="buttons display d-flex justify-content-between flex-wrap my-4 px-lg-5">
+                    <button type="button" class="btn btn-info" id="clearSelected">Clear Selected</button>
+                    <button type="button" class="btn btn-danger" id="clear">Clear All</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer id="footer" class="my-3">
+        <p class="m-0">💖 Ravindra Reddy &copy; 2020</p>
+    </footer>
+
+    <!-- water-drop sound for delete-->
+    <audio id="audio1" src="drop-sound.wav"></audio>
+    <!--sound for edit -->
+    <audio id="audio2" src="edit-sound.wav"></audio>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="js/app.js"></script>
+</body>
+</html>

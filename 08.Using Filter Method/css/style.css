@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+:root {
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --greenTrans: rgba(194, 240, 188, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+  --mainSummer:#f5cd79;
+  --mainPensive:#f5f6fa;
+  --mainBlue:#156ac5;
+  --mainSpiced:#ffbe76;
+  --mainPink:#f8a5c2;
+  --mainRed:#e55039;
+  --mainPrestige:#2f3542;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  background: var(--mainPensive);
+  color: var(--mainBlack);
+}
+/* nav links */
+.navbar {
+  background-color:var(--mainSpiced);
+  opacity:0.8;
+  height:60px;
+}
+.navbar-toggler {
+  outline: none !important;
+  margin-top:4px;
+  padding-bottom:0;
+}
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+  color: var(--mainBlue);
+}
+
+.nav-link {
+  color: var(--mainBlue);
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+/* end of nav links */
+/* info icons */
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainBlue);
+  border-color: var(--mainBlue);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+/* end of info icons */
+/* banner */
+
+.max-height {
+  min-height: calc(100vh - 60px);
+  background: linear-gradient(var(--greenTrans), var(--greenTrans)),
+    url("../img/headerbcg.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+.banner-title {
+  color: var(--mainBlue);
+  font-size: 4rem;
+}
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);
+}
+.banner-link:hover {
+  background: var(--mainBlack);
+  color: var(--mainBlue);
+}
+/* endo of banner */
+/* cart  */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: var(--mainWhite);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.5);
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* end of cart */
+/* cart item */
+.cart-item-remove {
+  color: var(--mainPink);
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+#cart-item-price {
+  font-size: 0.8rem;
+}
+/* cart item */
+/* cart buttons */
+.btn-pink {
+  color: var(--mainBlue) !important;
+  border-color: var(--mainBlue) !important;
+}
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+.btn-black:hover {
+  color: var(--mainBlue) !important;
+  background: var(--mainBlack) !important;
+}
+.btn-pink:hover {
+  background: var(--mainBlue) !important;
+  color: var(--mainBlack) !important;
+}
+/* end of cart buttons */
+
+/* about */
+
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainSpiced);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/*end of  about */
+
+/* treasure items */
+.treasure {
+  background: var(--mainSummer);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.treasure-img {
+  transition: all 1.5s ease-in-out;
+}
+.img-container:hover .treasure-img {
+  transform: scale(2);
+}
+
+.card-body {
+  padding:8px;
+  background:#55E6C1;
+  opacity:0.9;
+}
+.treasure-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainPink);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .treasure-item-icon {
+  transform: translate(0, 0);
+}
+.treasure-item-icon:hover {
+  color: var(--mainWhite);
+}
+.treasure-item-value {
+  color: var(--mainBlack);
+}
+#treasure-item-name {
+  color: var(--mainBlack);
+}
+/*end of  treasure items */
+
+/* search box */
+.search-box {
+  background: var(--mainPink);
+  color: var(--mainBlack);
+  cursor:pointer;
+}
+
+/* footer */
+.main {
+  background: var(--mainRed);
+  color: var(--mainWhite);
+}
+.social-icons p{
+  font-size:1.5rem;
+}
+.social-icons span{
+  font-size:2.5rem;
+  margin-right: 1rem;
+  cursor:pointer;
+}
+.social-icons span{
+  color: var(--mainWhite);
+}
+
+.social-icons span:hover{
+  color: var(--mainBlue);
+}
+
+footer {
+  position:relative;
+}
+.top-header{
+  position: absolute;
+  right:15px;
+  bottom:45px;
+}
+
+.footer {
+  background: var(--mainPrestige);
+  color: var(--mainWhite);
+  text-align:center;
+}
+/* end of footer */
+
+ /* highlightbox  */
+
+.highlightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6) !important;
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.highlightbox-holder {
+  position: relative;
+  margin:5rem 0;
+}
+.highlightbox-item {
+  min-height: 80vh;
+  background: url("../img/nike-1.jpg") center/cover fixed no-repeat;
+  border-radius: 0.1rem;
+  position: relative;
+}
+.highlightbox-close {
+  color: var(--mainBlack);
+  font-size: 1.7rem;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  right:1px;
+}
+.highlightbox-control {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--mainWhite);
+  transition: all 1s linear;
+  cursor: pointer;
+}
+.highlightbox-control:hover {
+  color: var(--mainSpiced);
+}
+.btnLeft {
+  top: 45%;
+  left: 0;
+  transform: translateX(-60%);
+}
+.btnRight {
+  top: 45%;
+  right: 0;
+  transform: translateX(60%);
+}
+
+/* end of highlightbox  */
+
+/* media queries */
+@media (max-width:400px){
+  .address p{
+    font-size:0.8rem;
+  }
+  .social-icons span{
+    font-size:1.4rem;
+    margin-right: 0.3rem;
+    cursor:pointer;
+  }
+  .social-icons p{
+    font-size:1rem;
+  }
+}

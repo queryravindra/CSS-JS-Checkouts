@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin : 0;
+  box-sizing:border-box;
+}
+
+body {
+  background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% );
+  overflow-y:smooth;
+}
+
+.container {
+  margin-bottom:50px;
+}
+#title {
+  text-decoration:underline;
+  color:#bb2205;
+}
+
+.box {
+  box-shadow:inset rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,inset rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding:30px;
+}
+
+#heading {
+  color:#709053;
+}
+
+.todo {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.display {
+  visibility: hidden;
+}
+
+#footer {
+    position:fixed;
+    bottom:0px;
+    background:rgba(242,242,242,1);
+    border-left:5px solid #111;
+    border-right:5px solid #111;
+    border-radius:20px;
+    box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align:center;
+    min-width: 100%;
+    padding:15px;
+}
+
+@media (max-width:470px){
+  .form-control{
+    height:30px;
+    font-size:12px;
+  }
+
+  #addToDo{
+    height:30px;
+    font-size:12px;
+  }
+
+  #title {
+    font-size:22px;
+  }
+
+  #heading {
+    font-size:18px;
+  }
+
+  .todoName {
+    font-size:14px;
+  }
+
+  #clear {
+    height:30px;
+    font-size:12px;
+    margin:auto;
+  }
+
+  #clearSelected{
+    height:30px;
+    font-size:12px;
+    margin:auto;
+    margin-bottom:4px;
+  }
+
+  #footer {
+    padding:3px;
+  }
+}

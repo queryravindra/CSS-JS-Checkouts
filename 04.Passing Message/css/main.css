@@ -1,0 +1,32 @@
+
+.max-height {
+  min-height: 100vh;
+}
+body {
+ background-color:#eebb4d;
+}
+.message-box {
+  border-radius:5px;
+  background-color:#a6dcef;
+}
+.message-content {
+  color: #ff5200;
+  font-size:18px;
+}
+#btn {
+  background-color:#96bb7c;
+  color:#111;
+  border:1px solid #111;
+}
+#btn:hover {
+  color: var(--lightBlue);
+  color: var(--mainBlack);
+}
+
+.alert {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}

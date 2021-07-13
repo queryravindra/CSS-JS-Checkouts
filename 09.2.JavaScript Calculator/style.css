@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor:pointer;
+    background:teal;
+    border:none;
+    color: #fff;
+}
+
+.textview {
+    width:205px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    border:none;
+    color: #fff;
+    background:chocolate;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background:#000;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+}

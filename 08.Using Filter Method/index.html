@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Ravindra's Treasure</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header id="home">
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg px-3">
+      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active mr-5">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link " href="#about">about</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="#treasure">treasure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span class="item-total">142.25</span></p>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">Ravindra's<strong class="banner-title ">Treasure</strong></h1>
+          <a href="#treasure" class="btn banner-link my-2">Let's HUNT</a>
+        </div>
+        <div id="cart" class="cart">
+          <!-- cart item -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="img/z-rebook-3.jpg" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <p id="cart-item-price" class="mb-0">77.26</p>
+            </div>
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!--end of  cart item -->
+          <!-- cart item -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="img/z-nike-1.jpg" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="cart-item-text">
+
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <p id="cart-item-price" class="mb-0">64.99</p>
+            </div>
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!--end of  cart item -->
+          <!-- cart total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5> $ <strong id="cart-total" class="font-weight-bold">142.25</strong> </h5>
+          </div>
+          <!--end cart total -->
+          <!-- cart buttons -->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+          </div>
+          <!--end of  cart buttons -->
+        </div>
+      </div>
+    </div>
+    <!--end of  banner  -->
+  </header>
+  <!-- End of header -->
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">about <strong class="banner-title">us</strong></h1>
+          <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
+            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
+            porro at dolorum! Ad!</p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">hunt</a>
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="img/nike-1.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of about us -->
+  <!-- treasure -->
+  <section id="treasure" class="treasure py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">My <strong class="banner-title ">treasure</strong></h1>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!--filter buttons -->
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">all</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="nike">nike</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="adidas">adidas</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="rebook">rebook</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="fila">fila</a>
+        </div>
+      </div>
+      <!-- search box -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='' id="search-item">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--end of filter buttons -->
+      <!-- treasure  items-->
+      <div class="row" id="treasure-items">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item nike" data-item="nike">
+          <!-- card -->
+          <div class="card">
+            <div class="img-container">
+              <img src="img/nike-1.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">nike</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">64.99</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item adidas" data-item="adidas">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/adidas-1.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">adidas</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">54.99</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item rebook" data-item="rebook">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/rebook-1.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">rebook</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">42.44</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item fila" data-item="fila">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/fila-1.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">fila</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">39.95</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item nike" data-item="nike">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/nike-2.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">nike</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">74.99</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item adidas" data-item="adidas">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/adidas-2.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">adidas</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">67.99</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item rebook" data-item="rebook">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/rebook-2.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">rebook</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">57.40</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item fila" data-item="fila">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/fila-2.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">fila</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">49.95</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item nike" data-item="nike">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/nike-3.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">nike</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">84.99</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item adidas" data-item="adidas">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/adidas-3.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">adidas</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">78.99</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item rebook" data-item="rebook">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/rebook-3.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">rebook</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">77.26</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item fila" data-item="fila">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/fila-3.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">fila</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">54.95</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item nike" data-item="nike">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/nike-4.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">nike</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">196.31</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item adidas" data-item="adidas">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/adidas-4.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">adidas</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">98.99</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item rebook" data-item="rebook">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/rebook-4.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">rebook</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">80.45</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 treasure-item fila" data-item="fila">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/fila-4.jpg" class="card-img-top treasure-img" alt="">
+              <span class="treasure-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="treasure-item-name">fila</h5>
+                <h5 class="treasure-item-value">$ <strong id="treasure-item-price" class="font-weight-bold">60.00</strong></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single treasure item-->
+      </div>
+      <!--end of treasure items -->
+    </div>
+  </section>
+  <!-- end of treasure -->
+  <!-- highlightbox -->
+  <div class="container-fluid">
+    <div class="row highlightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right highlightbox-holder">
+        <div class="highlightbox-item"><i class="fas fa-window-close highlightbox-close"></i></div>
+        <span class="highlightbox-control btnLeft"><i class="fas fa-chevron-left"></i></span>
+        <span class="highlightbox-control btnRight"><i class="fas fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </div>
+  <!-- end of highlightbox -->
+  <footer id="contact">
+    <div class="main p-4 d-flex flex-wrap justify-content-around align-items-center">
+      <div class="address">
+        <h4>Ravindra's Treasure</h4>
+          <p>FLAT.NO:#123-45/67, danger zone</p>
+          <p>aa00aa,Heaven</p>
+          <p>Zzzzz-123456</p>
+      </div>
+      <div class="social-icons mt-3">
+        <p>We are vailable at:</p>
+        <a href="#"><span><i class="fab fa-twitter"></i></span></a>
+        <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+        <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+        <a href="#"><span><i class="fab fa-youtube"></i></span></a>
+      </div>
+    </div>
+    <a href="#home" class="top-header"><i class="fa fa-chevron-up" style="background-color:#333;padding:20px;float:right;color:#fff;" aria-hidden="true"></i></a>
+    <div class="footer">
+      <p class="my-auto p-2">💖 Ravindra Reddy &copy; 2020</p>
+    </div>
+  </footer>
+
+
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

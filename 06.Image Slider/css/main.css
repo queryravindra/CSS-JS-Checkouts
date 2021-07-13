@@ -1,0 +1,54 @@
+:root {
+  --maingray: #eee;
+  --mainchocolate: chocolate;
+}
+.main {
+  min-height: 100vh;
+}
+body {
+  background: var(--maingray);
+}
+.img-container {
+  min-height: 60vh;
+  background: url("../images/img-0.jpg") center/cover fixed no-repeat;
+  border: 0.5rem solid var(--mainchocolate);
+  border-radius: 50% 50%;
+  position: relative;
+}
+
+.btn-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: var(--mainchocolate);
+  color: var(--maingray) !important;
+  transform: translate(-50%, -50%);
+  border: 0.2rem solid var(--mainchocolate);
+  font-size: 1.2rem;
+}
+.btn-left:hover {
+  border-color: var(--mainchocolate);
+  background: var(--maingray);
+  color: var(--mainchocolate) !important;
+}
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: var(--mainchocolate);
+  color: var(--maingray) !important;
+  font-size: 1.2rem;
+  transform: translate(50%, -50%);
+  border: 0.2rem solid var(--mainchocolate);
+}
+.btn-right:hover {
+  border-color: var(--mainchocolate);
+  background: var(--maingray);
+  color: var(--mainchocolate) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .img-container {
+    min-height: 80vh;
+  }
+}
